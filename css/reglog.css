@@ -1,0 +1,71 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(../images/jellyfish.jpg)no-repeat center center fixed;/*https://www.pexels.com/nl-nl/foto/drie-veelkleurige-kwallen-1086584/*/
+    background-size: cover;
+}
+
+/*login form css*/
+.frm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "Roboto", sans-serif;
+    background: #FFFFFF;
+    opacity: 90%;
+    padding: 4ch 5ch 4ch 5ch;
+    box-shadow: 0 0 3ch 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    max-width: 32ch;
+}
+.regform label{
+    font-size: 15px;
+    padding: 0.5ch;
+}
+.regform input, .formfill{
+    outline: 0;
+    border-radius: 10px;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 2ch;
+    padding: 2ch;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.regform input:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.regform input:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.submit1{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 10px;
+    background: #1ADBE5;
+    width: 100%;
+    border: 0;
+    padding: 2ch;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+.submit1:hover, .submit1:active, .submit1:focus{
+    background-color: #06C5CF;
+    transition: all 1s ease 0s;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: #B3B3B3;
+    font-size: 12px;
+}
+.form .message a{
+    color: #06C5CF;
+    text-decoration: none;
+}

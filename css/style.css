@@ -1,0 +1,154 @@
+html{
+    background-color: cornflowerblue; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #00bfff, #1cab1c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 15% 0;
+}
+
+
+/*user.php*/
+/*user.php*/
+/*user.php*/
+.displayplastic {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 38%;
+    margin-top: 5%;
+}
+
+.displayplastic td, .displayplastic th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.displayplastic tr:nth-child(even){background-color: #d2d2d2;}
+
+.displayplastic tr:hover {background-color: #a9a9a9;}
+
+.displayplastic tr {background-color: white;}
+
+.displayplastic th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*navigation*/
+/*navigation*/
+/*navigation*/
+
+nav {
+    width: 100%;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 25%, rgba(255, 255, 255, 0.6) 75%, rgba(255, 255, 255, 0.3) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+nav ul li {
+    display: inline-block;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+nav ul li a {
+    padding: 2ch;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 1ch rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+/*display forms*/
+/*display forms*/
+/*display forms*/
+.regform{
+    display: flex;
+    margin: 0 auto 5ch;
+    justify-content: center;
+}
+
+.frm{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    background: #FFFFFF;
+    opacity:90%;
+    padding: 4ch 5ch 4ch 5ch;
+    box-shadow: 0 0 3ch 0 rgba(0, 0, 0, 0.2), 0 .5ch .5ch 0 rgba(0, 0, 0, 0.24);
+    border-radius: 1ch;
+    max-width: 32ch;
+}
+.regform label{
+    font-size: 2ch;
+    padding: 0.5ch;
+}
+.regform input, .formfill{
+    outline: 0;
+    border-radius: 1ch;
+    background: #F2F2F2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 2ch;
+    padding: 2ch;
+    box-sizing: border-box;
+    font-size: 2ch;
+}
+.regform input:hover{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.regform input:focus{
+    background-color: #D3F8F9;
+    transition: all 1s ease 0s;
+}
+.submit1{
+    text-transform: uppercase;
+    outline: 0;
+    border-radius: 1ch;
+    background: #1ADBE5;
+    width: 100%;
+    border: 0;
+    padding: 2ch;
+    color: #000000;
+    font-size: 1.5ch;
+    cursor: pointer;
+}
+.submit1:hover, .submit1:active, .submit1:focus{
+    background-color: #06afb8;
+    transition: all 1s ease 0s;
+}
+
+.form .message{
+    margin: 1.5ch 0 0;
+    color: #B3B3B3;
+    font-size: 1ch;
+}
+.form .message a{
+    color: #06C5CF;
+    text-decoration: none;
+}
+
+
+
+

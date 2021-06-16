@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 18.25ch;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropbtn{
+        cursor: pointer;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    }
+
+    .show {display: block;}
+</style>
+<nav>
+    <div>
+        <ul>
+            <li>
+                <a href="../html/login.php">Login</a>
+            </li>
+            <li>
+                <a href="../html/register.php">Register</a>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a onclick="myFunction()" class="dropbtn">Languages</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Dutch</a>
+                        <a href="#">Greek</a>
+                        <a href="#">Italian</a>
+                        <a href="#">Romanian</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
